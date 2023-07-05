@@ -1,1 +1,2 @@
-# zomato_app_flask
+# zomato-app-flask
+build zomato application using flask
