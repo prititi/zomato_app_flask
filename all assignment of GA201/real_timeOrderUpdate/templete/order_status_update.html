@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Status Update</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+    <script type="text/javascript">
+        var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+        socket.on('connect', function() {
+            console.log('Connected to the server');
+        });
+
+        // Example code to update the order status
+        function updateOrderStatus(orderId, newStatus) {
+            var data = { order_id: orderId, new_status: newStatus };
+            socket.emit('update_order_status', data);
+        }
+    </script>
+</head>
+<body>
+    <h1>Order Status Update</h1>
+    <button onclick="updateOrderStatus('order123', 'ready')">Update Order Status</button>
+</body>
+</html>

@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Pizza",
+        "price": 10.99,
+        "availability": true
+    },
+    {
+        "id": 2,
+        "name": "Burger",
+        "price": 5.99,
+        "availability": true
+    },
+    {
+        "id": 3,
+        "name": "Pasta",
+        "price": 8.99,
+        "availability": true
+    },
+    {
+        "id": 12,
+        "name": "pizza",
+        "price": "300",
+        "availability": true
+    },
+    {
+        "id": 16,
+        "name": "samosa",
+        "price": 30.99,
+        "availability": true
+    },
+    {
+        "id": 17,
+        "name": "poha",
+        "price": "12",
+        "availability": true
+    },
+    {
+        "id": 19,
+        "name": "panir",
+        "price": "100",
+        "availability": true
+    },
+    {
+        "id": 20,
+        "name": "sahi paneer",
+        "price": 10.99,
+        "availability": false
+    }
+]

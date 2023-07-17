@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update</title>
+</head>
+<body>
+    <h1>Update</h1>
+    <form method="post" action="/update">
+        <label for="key">Key:</label>
+        <select name="key" id="key">
+            {% for key, value in data.items() %}
+                <option value="{{ key }}">{{ key }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <label for="value">Value:</label>
+        <input type="text" name="value" id="value">
+        <br>
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>
